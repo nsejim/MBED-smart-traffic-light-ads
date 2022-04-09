@@ -19,9 +19,9 @@ The following is the required operation scenario
 
 - YELLOW ON: A pedestrian or cyclist arrives on a street crossing at the moment when the traffic light is “YELLOW” (Cars are moving). The traffic light billboard is simply showing let's say the time of day. 
 
-- YELLOW BLINKING: The pedestrian/cyclist pushes on a button to indicate that he/she want to cross. From that moment on, the traffic light starts to blink (YELLOW BLINKING) during 30 seconds. During that period, the billboard is going to show an advertisement specific for pedestrian/cyclist.
+- YELLOW BLINKING: The pedestrian/cyclist pushes on a button to indicate that he/she want to cross. From that moment on, the traffic light starts to blink during 30 seconds and a blinking sound is played as well. During that period, the billboard is going to show an advertisement specific for pedestrian/cyclist.
 
-- RED ON: After 30 seconds, the traffic light turns RED, then cars stop and wait for the light to turn back to YELLOW. The pedestrians/cyclists are allowed to cross for about 1 min. During that time, the billboard is going to show an advertisement specific for car drivers. In order to inform disabled people that they can cross, a sound is also played when RED is ON.
+- RED ON: After 30 seconds, the traffic light turns RED and the sound plays continuously, then cars stop and wait for the light to turn back to YELLOW. Wen The pedestrians/cyclists are allowed to cross for about 1 min. During that time, the billboard is going to show an advertisement specific for car drivers. 
 
 ### Towards a data-driven revenue model
 
@@ -53,13 +53,12 @@ The following is the narrative of the embedded algorithm to be implemented:
 
 - STATE2 => When a pedestrian pushes on a button to indicate that he/she want to cross, the following happens: 
     - A message with status value = 1 is sent to the remote IoT platform together with deviceID and timestamp. 
-    - YELLOW light start BLINKING for 5 seconds before switching OFF. While YELLOW BLINKING, RED light is still OFF.
+    - YELLOW light start BLINKING for 5 seconds before switching OFF. While YELLOW BLINKING, a blinking sound is played while RED light is still OFF.
     - Billboard (LCD) displays an ad for pedestrians (BUY 2 COFFEES FOR THE PRICE OF 1 AT GREEN COFFEE) 
 
 - STATE3 => After 5 seconds, the pedestrian is allowed to cross, 
     - A message with status value = 2 is sent to the remote IoT platform together with deviceID and timestamp. .
-    - YELLOW light turns OFF. RED light turns ON to stop the cars for a period of 10 seconds. 
-    - A sound is played to inform disabled people that they can cross
+    - YELLOW light turns OFF. RED light turns ON to stop the cars for a period of 10 seconds. During that period, a sound is played continuously to inform disabled people that they can cross
     - Billboard (LCD) displays an ad for car drivers (10% DISCOUNT ON YOUR FULL TANK AT SP RWANDA )
 
 - After 10 seconds, go back into STATE1 the cars are allowed to move again.
