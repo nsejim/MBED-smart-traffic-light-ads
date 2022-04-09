@@ -73,6 +73,8 @@ The following are the MBED API focus for each lab:
 - LAB 2: Interrupts + Timers + LCD 
 - LAB 3: LoRaWAN + Serial Output
 
+### Lab 1 - DEMO
+[![LAB1-DEMO](images/demo-lab1.gif)](https://www.youtube.com/watch?v=5G4iqtOMhpo)
 
 ## Documentation References
 
