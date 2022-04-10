@@ -75,6 +75,14 @@ The following are the MBED API focus for each lab:
 ### Lab 1 - DEMO
 [![LAB1-DEMO](images/demo-lab1.gif)](https://www.youtube.com/watch?v=5G4iqtOMhpo)
 
+Click on image to watch the demo
+
+### Lab 2 - DEMO
+
+[![LAB2-DEMO](images/demo-lab2.gif)](https://youtu.be/jMmD4vIyMLo)
+
+Click on image to watch the demo
+
 ## Documentation References
 
 - MBED API documentation https://os.mbed.com/docs/mbed-os/v5.15/introduction/index.html
