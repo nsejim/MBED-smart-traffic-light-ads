@@ -2,7 +2,8 @@
 
 ## Introduction 
 
-This repo contains the hands-on labs for prototyping an IoT-based smart advertising services on traffic lights. 
+This repository contains the hands-on labs for prototyping an IoT-based embedded system for controlling ads on traffic lights. Ads are to be displayed by considering the category of who is waiting at a given moment, meaning either the pedestrian/cyclist or car driver. 
+
 It is based on the ARM MBED framework and is targeted to be either simulated online at https://simulator.mbed.com/ or run on embedded platforms supporting MBED. 
 
 ## Project Description
