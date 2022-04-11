@@ -47,22 +47,22 @@ From collected data, every advertiser (so the customer paying for its ads to be 
 
 The following is the narrative of the embedded algorithm to be implemented:
 
-- STATE1 => When starting the embedded application
+- STATE0 => When starting the embedded application
     - A message with status value = 0 is sent to the remote IoT platform together with deviceID and timestamp.
     - YELLOW light is ON and RED light is OFF
     - Billboard (LCD) alternatively displays the company name for 3 seconds and then the current time for another 3 seconds and so on
 
-- STATE2 => When a pedestrian pushes on a button to indicate that he/she want to cross, the following happens: 
+- STATE1 => When a pedestrian pushes on a button to indicate that he/she want to cross, the following happens: 
     - A message with status value = 1 is sent to the remote IoT platform together with deviceID and timestamp. 
     - YELLOW light start BLINKING for 5 seconds before switching OFF. While YELLOW BLINKING, a blinking sound is played while RED light is still OFF.
     - Billboard (LCD) displays an ad for pedestrians (BUY 2 COFFEES FOR THE PRICE OF 1 AT GREEN COFFEE) 
 
-- STATE3 => After 5 seconds, the pedestrian is allowed to cross, 
+- STATE2 => After 5 seconds, the pedestrian is allowed to cross, 
     - A message with status value = 2 is sent to the remote IoT platform together with deviceID and timestamp. .
     - YELLOW light turns OFF. RED light turns ON to stop the cars for a period of 10 seconds. During that period, a sound is played continuously to inform disabled people that they can cross
     - Billboard (LCD) displays an ad for car drivers (10% DISCOUNT ON YOUR FULL TANK AT SP RWANDA )
 
-- After 10 seconds, go back into STATE1 the cars are allowed to move again.
+- After 10 seconds, go back into STATE0 the cars are allowed to move again.
 
 ## Hands-on labs
 
