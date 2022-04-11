@@ -69,9 +69,9 @@ The following is the narrative of the embedded algorithm to be implemented:
 This prototyping project is organised into 3 hands-on labs in order to get progressivelyy familiar with different MBED APIs and also to develop the different features in an agile way. 
 
 The following are the MBED API focus for each lab:
-- LAB 1: Digital I/O + PwmOut + Analog I/O
-- LAB 2: Interrupts + Timers + LCD 
-- LAB 3: LoRaWAN + Serial Output
+- LAB 1: Digital I/O + PwmOut
+- LAB 2: Interrupts + Timeout 
+- LAB 3: LCD + LoRaWAN
 
 ### Lab 1 - DEMO
 [![LAB1-DEMO](images/demo-lab1.gif)](https://www.youtube.com/watch?v=5G4iqtOMhpo)
