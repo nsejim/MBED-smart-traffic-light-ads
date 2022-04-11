@@ -1,1 +1,0 @@
-This folder contains the PDL (Program Description Language) for each hands-on lab.
