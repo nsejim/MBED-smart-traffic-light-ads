@@ -84,6 +84,12 @@ Click on image to watch the demo
 
 Click on image to watch the demo
 
+### Lab 3 - DEMO
+
+[![LAB3-DEMO](images/demo-lab3.gif)](https://youtu.be/DjVfrgpNF4c)
+
+Click on image to watch the demo
+
 ## Documentation References
 
 - MBED API documentation https://os.mbed.com/docs/mbed-os/v5.15/introduction/index.html
